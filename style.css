@@ -1,9 +1,8 @@
-
 :root {
-  --body-bg-color: #22212C;
-  --text-color: #837E9F;
-  --bg-cards: #302F3D;
-  --bg-techs: #CB92B1;
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
 }
 
 * {
@@ -24,11 +23,8 @@ body {
 }
 
 .sidebar {
-  outline: 1px solid blue;
-
   flex-basis: 428px;
   padding: 40px 30px 40px 40px;
-
 }
 
 .sidebar__item {
@@ -47,8 +43,50 @@ body {
 }
 
 .sidebar__item svg {
-  margin-right:16px;
+  margin-right: 16px;
   vertical-align: middle;
+}
+
+.sidebar__skills-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__skills-list:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.sidebar__skills h2,
+.sidebar__experience h2,
+.sidebar__education h2 {
+  margin-top: 0;
+}
+
+.sidebar__skills-list li {
+  width: 100%;
+  max-width: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 999px;
+  background: #cb92b1;
+  color: #000000;
+}
+
+.sidebar__list li span,
+.sidebar__list li strong {
+  display: block;
+}
+.sidebar__list li:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 /* Igual ao seletor anterior escrito de uma forma diferente */
